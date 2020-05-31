@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    @font-face {
+          font-family: Ropa Sans;
+         src: url('RopaSans-Regular.ttf');
+       }  
+  </style>
+<head>
+  <meta charset="UTF-8" />
+  <title>Contato</title>
+
+  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+  <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="contato.css" />
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <label id="icone" for="check"><img src="a.png" style="width: 50px;height: 50px;"></label>  
+
+    <div class="barra">
+        <nav>
+            <a href="index.html"><div  style="margin-top: 20px;"class="link">Home</div></a>
+            <a href="sobre.html"><div class="link">Sobre</div></a>
+            <a href="contato.html"><div class="link">Contato</div></a>
+        </nav>
+    </div>
+  <header>
+    <div>
+      <h1 class='nome'>Espocoach</h1>     
+    </div>
+
+    
+  </header>
+
+  <main>
+    <form>
+        <label for="nomesobrenome">Nome e sobrenome</label>
+        <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+        <fieldset>
+            <legend>Como prefere o nosso contato?</legend>
+            <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+            
+            <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+            
+            <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+        </fieldset>
+
+        <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+        <input type="submit" value="Enviar formulário" class="enviar">
+    </form>
+
+    <table>
+        <tr>
+            <td>Dia</td>
+            <td>Horário</td>
+        </tr>
+        <tr>
+            <td>Segunda</td>
+            <td>8h ~ 20h</td>
+        </tr>
+        <tr>
+            <td>Quarta</td>
+            <td>8h ~ 20h</td>
+        </tr>
+        <tr>
+            <td>Sexta</td>
+            <td>8h ~ 20h</td>
+        </tr>
+    </table>
+</main>
+
+</body>
+
+<footer class="rodape">
+
+  <p class="slogan">Sua luta não termina quando sentir cansaço, mas sim quando atingir o sucesso tão merecido.</p>
+
+  <div class="icones">
+    <i class="fab fa-twitter" aria-hidden="true"></i>
+    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+    <i class="fab fa-google-plus-g" aria-hidden="true"></i>
+    <i class="fab fa-instagram" aria-hidden="true"></i>
+  </div>
+  
+  
+
+</footer> 
+
+</html>

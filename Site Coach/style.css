@@ -1,0 +1,154 @@
+html {
+	font-family: 'Ropa Sans', sans-serif;
+	width: 100%;
+	height: auto;
+}
+.nome{
+	background-color: #FFAE64;
+	padding: 3% 0 3% 0;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+}
+/*menu retratil*/
+#check{ 
+    display: none;
+}
+
+#icone{
+    cursor: pointer;
+    padding: 40px 5px 5px 5px;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.barra{
+    background-color: #7DAD71;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+.link{
+    background-color: rgb(115, 168, 102)   ;
+    padding: 20px;
+    font-size: 24px;
+    transition: all .2s linear;
+    border-bottom: 2px solid #7DAD71;
+}
+
+.link:hover{
+    background-color: rgb(158, 194, 149);
+}
+
+#check:checked ~ .barra{
+    transform: translateX(300px);
+}
+	
+img{
+    width: 10%;
+    height: 10%;
+}
+
+.frases{
+	text-align: center;
+	font-size: 24px;
+	color: #7DAD71;
+	margin-top: 30px;
+}
+.frase{
+	text-align: center;
+	font-size: 24px;
+	color: #7DAD71;
+	margin-bottom: 30px;
+
+}
+
+/*slide imagem*/
+
+#slides{
+	list-style: none; 
+	position: relative; 
+	width: 80%;
+	max-width: 900px;
+	height:300px;
+	margin:0 auto;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+#slides li{
+	position: absolute;
+	top:10%;
+	left:0;
+	opacity: 0;
+	z-index: 0;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+#slides li.slider-active{
+	z-index: 1;
+	opacity: 1;
+}
+img{	
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+.sequencia{	
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+.texto{
+	text-align: center;
+	font-size: 24px;
+	color: #7DAD71;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.rodape{
+	background-color: #FFAE64;
+	padding: 2% 0 2% 0;
+	color: white;
+}
+
+.slogan{
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 2%;
+}
+
+.icones i{
+    margin: 0 3px 0 3px;
+}
+.icones{
+    font-size: 20px;
+    text-align: center;
+}
