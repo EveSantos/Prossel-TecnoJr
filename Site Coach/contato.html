@@ -10,35 +10,50 @@
   <meta charset="UTF-8" />
   <title>Contato</title>
 
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+
   <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
   <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="reset.css" />
+
   <link rel="stylesheet" href="contato.css" />
 </head>
 
 <body>
-    <input type="checkbox" id="check">
-    <label id="icone" for="check"><img src="a.png" style="width: 50px;height: 50px;"></label>  
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
-    <div class="barra">
-        <nav>
-            <a href="index.html"><div  style="margin-top: 20px;"class="link">Home</div></a>
-            <a href="sobre.html"><div class="link">Sobre</div></a>
-            <a href="contato.html"><div class="link">Contato</div></a>
-        </nav>
-    </div>
   <header>
-    <div>
-      <h1 class='nome'>Espocoach</h1>     
-    </div>
-
-    
-  </header>
+    <nav class="nome">
+        <div class="nav-wrapper">
+         
+             <div><a href="#" class="brand-logo">Espocoach</a></div>
+             <a href="#" data-activates="menu-mobile" class="button-collapse">
+                 <i class="material-icons">menu</i>
+             </a>
+             <div class="menu">
+             <ul class="right hide-on-med-and-down">
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="sobre.html">Sobre</a></li>
+                 <li><a href="contato.html">Contato</a></li>
+             </ul>
+            </div>
+             <div>
+             <ul class="side-nav" id="menu-mobile">
+              <li><a class="link" href="index.html">Home</a></li>
+              <li><a class="link" href="sobre.html">Sobre</a></li>
+              <li><a class="link" href="contato.html">Contato</a></li>
+             </ul>
+            </div>
+            
+         </div>
+     </nav>
+    </header>
 
   <main>
     <form>
         <label for="nomesobrenome">Nome e sobrenome</label>
-        <input type="text" id="nomesobrenome" class="input-padrao" required>
+        <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Nome e Sobrenome">
 
         <label for="email">Email</label>
         <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
@@ -81,13 +96,18 @@
             <td>8h ~ 20h</td>
         </tr>
     </table>
-</main>
-
+  </main>
+    <script>
+      $(function(){
+          $(".button-collapse").sideNav();
+      });
+      </script>
 </body>
 
 <footer class="rodape">
-
-  <p class="slogan">Sua luta não termina quando sentir cansaço, mas sim quando atingir o sucesso tão merecido.</p>
+  <div class="slogan2">
+    <p class="slogan">Sua luta não termina quando sentir cansaço, mas sim quando atingir o sucesso tão merecido.</p>
+  </div>
 
   <div class="icones">
     <i class="fab fa-twitter" aria-hidden="true"></i>

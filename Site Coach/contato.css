@@ -5,64 +5,33 @@ html {
 }
 .nome{
 	background-color: #FFAE64;
-	padding: 3% 0 3% 0;
-	text-align: center;
 	font-size: 50px;
 	font-weight: bold;
 	color: white;
 }
 
-/*menu retratil*/
-#check{ 
-    display: none;
+.brand-logo{
+	margin-left: 5%;
 }
 
-#icone{
-    cursor: pointer;
-    padding: 40px 5px 5px 5px;
-    position: absolute;
-    z-index: 1;
-
+.menu{
+	margin-right: 5%;
 }
 
-.barra{
-    background-color: #7DAD71;
-    height: 100%;
-    width: 300px;
-    position: absolute;
-    transition: all .2s linear;
-    left: -300px;
+.side-nav{
+	background-color: #7DAD71;
 }
 
-nav{
-    width: 100%;
-    position: absolute;
-    top: 60px;
+.side-nav a{
+	color: white;
+	background-color: rgb(135, 180, 123);
+	margin: 3px 0;
 }
 
-nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+nav ul a{
+	margin-right: 10%;
+	font-size: 18px;
 }
-
-
-.link{
-    background-color: rgb(115, 168, 102)   ;
-    padding: 20px;
-    font-size: 24px;
-    transition: all .2s linear;
-    border-bottom: 2px solid #7DAD71;
-}
-
-.link:hover{
-    background-color: rgb(158, 194, 149);
-}
-
-#check:checked ~ .barra{
-    transform: translateX(300px);
-}
-
 main {
 	width: 940px;
 	margin: 0 auto;
@@ -83,13 +52,26 @@ form label, form legend {
 	display: block;
 	margin: 0 0 20px;
 	padding: 10px 25px;
+	height: auto;
 	width: 50%;
 }
 
 .checkbox {
 	margin: 20px 0;
 }
-
+[type="radio"]:not(:checked),
+[type="radio"]:checked{
+    opacity:1;
+    left:0;
+    position:relative;
+}
+input:not([type]), 
+input[type=text], input[type=password],
+input[type=email], input[type=url], input[type=time], 
+input[type=date], input[type=datetime], input[type=datetime-local], 
+input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea{
+	width: 50%;
+}
 .enviar {
 	width:40%;
 	padding: 15px 0;
@@ -110,6 +92,7 @@ form label, form legend {
 
 table {
 	margin: 20px 0 40px;
+	width: 0;
 }
 
 thead {
@@ -124,22 +107,25 @@ td, th {
 }
 
 .rodape{
+	box-sizing: content-box;
 	background-color: #FFAE64;
-	padding: 2% 0 2% 0;
 	color: white;
+	padding: 1.5% 0 0 0;
+
 }
 
 .slogan{
-    color: white;
 	text-align: center;
 	font-size: 25px;
-	margin-bottom: 2%;
+	align-self: center;
+	margin: 0;
 }
 
 .icones i{
-    margin: 0 3px 0 3px;
+	margin: 10px 3px 0 3px;
+	padding-bottom: 1.5%;
 }
 .icones{
     font-size: 20px;
-    text-align: center;
+	text-align: center;	
 }

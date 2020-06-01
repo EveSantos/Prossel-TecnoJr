@@ -9,64 +9,110 @@
 <head>
   <meta charset="UTF-8" />
   <title>Espocoach</title>
-
+  
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+  
   <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
   <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="reset.css" />
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <input type="checkbox" id="check">
-    <label id="icone" for="check"><img src="a.png" style="width: 50px;height: 50px;"></label>  
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  
 
-    <div class="barra">
-        <nav>
-            <a href="index.html"><div  style="margin-top: 20px;"class="link">Home</div></a>
-            <a href="sobre.html"><div class="link">Sobre</div></a>
-            <a href="contato.html"><div class="link">Contato</div></a>
-        </nav>
-    </div>
-  <header>
     <div>
-      <h1 class='nome'>Espocoach</h1>
+    <header>
+    <nav class="nome">
+        <div class="nav-wrapper">
+         
+             <div><a href="#" class="brand-logo">Espocoach</a></div>
+             <a href="#" data-activates="menu-mobile" class="button-collapse">
+                 <i class="material-icons">menu</i>
+             </a>
+             <div class="menu">
+             <ul class="right hide-on-med-and-down">
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="sobre.html">Sobre</a></li>
+                 <li><a href="contato.html">Contato</a></li>
+             </ul>
+            </div>
+             <div>
+             <ul class="side-nav" id="menu-mobile">
+              <li><a class="link" href="index.html">Home</a></li>
+              <li><a class="link" href="sobre.html">Sobre</a></li>
+              <li><a class="link" href="contato.html">Contato</a></li>
+             </ul>
+            </div>
+            
+         </div>
+     </nav>
+    </header>
     </div>
+ 
 
-  </header>
-
-  <p class="frases">O seu coach de esporte</p>
+    
   <div id="slides">
     
     <ul>    
       <li class="slider-active"><img style="width: 100%;height: 100%;" src="imagens/slide1.jpg" /></li>
 		  <li><img style="width: 100%; height: 100%;" src="imagens/slide2.jpg" /></li>
-      <li><img style="width: 100%; height: 100%;" src="imagens/slide3.jpg" /></li>    
     </ul>
 
     <script src="slider.js"></script>
 
   </div> 
 
-  <p class="frase">Qual é o teu maior medo?</p>
+  <h1 class="frase">Autoconhecimento</h1> 
   <p class="texto">
-    O nosso maior medo não é sermos inadequados. <br>
-    O nosso maior medo é sermos infinitamente poderosos. <br>
-    É a nossa própria luz, não a nossa escuridão, que nos amedronta. <br>
-    Sermos pequenos não engrandece o mundo. <br>
-    Não há nada de transcendenteem sermos pequenos, <br>
-    pois assim os outros não se sentirão inseguros ao nosso lado. <br>
-    Todos estamos destinados a brilhar, como as crianças. <br>
-    Não apenas alguns de nós, mas todos. <br>
-    E, enquanto irradiamos nossa admirável luz interior, <br>
-    inconscientemente estamos a permitir aos outros fazer o mesmo. <br>
-    E, quando nos libertarmos dos nossos próprios medos, <br>
-    a nossa presença automaticamente libertará os medos dos outros.</p>
-</body>
+    O autoconhecimento traz benefícios para todas as áreas da vida e com o esporte 
+    não é diferente. Quando um atleta se conhece, tem a oportunidade de saber exatamente 
+    quais são os seus pontos fortes e aqueles em que precisa melhorar. 
+    Isso permite que tome decisões mais assertivas relacionadas à sua carreira e 
+    seu desempenho dentro e fora das quadras. E esse é um dos grandes benefícios 
+    que um treinador coach pode oferecer</p>
+
+  <p class="frase">Desenvolvimento da inteligência emocional</p>
+  <p class="texto">
+    Para se dar bem no esporte, não basta dominar as técnicas, é preciso saber 
+    controlar as próprias emoções para evitar ser dominado por elas. Em situações 
+    de competição, por exemplo, ganha o atleta que melhor consegue lidar com toda 
+    a pressão envolvida sem perder o controle. Assim, inteligência emocional é um 
+    aspecto de grande importância em carreiras esportivas, porque é preciso conseguir 
+    manter a calma para que os aspectos técnicos possam se sobressair.</p>
+
+  <p class="frase">Motivação</p>
+  <p class="texto">
+    Por fim está ela, a motivação, algo sem o qual torna-se praticamente impossível vencer
+    um campeonato. Afinal de contas, um atleta precisa estar motivado e acreditar 
+    que é capaz para realmente se dedicar e lutar pelo melhor resultado. E o modo com o qual
+    o treinador age é decisivo para que os atletas se mantenham motivados e nunca desistam 
+    de seus objetivos, mesmo quando o cenário não é dos mais favoráveis.</p>
+  
+  <p class="frase">Definição de metas</p>
+  <p class="texto">
+    Todo atleta tem o desejo de se tornar campeão em seu esporte de atuação, contudo, não dá 
+    para chamar isso de meta, pois se trata de uma ideia um tanto quanto vaga, que não impulsiona
+    a ação. Uma das funções do treinador coach é auxiliar seus coachees (clientes) a definir essas
+    metas, incluindo detalhes que são de grande importância para que a equipe se mantenha motivada
+    e se organize para chegar lá.</p>
+
+
+    <script>
+      $(function(){
+          $(".button-collapse").sideNav();
+      });
+      </script>
+  </body>
 
 <footer class="rodape">
-
+  <div>
   <p class="slogan">Sua luta não termina quando sentir cansaço, mas sim quando atingir o sucesso tão merecido.</p>
-
+  </div>
   <div class="icones">
     <i class="fab fa-twitter" aria-hidden="true"></i>
     <i class="fab fa-facebook-f" aria-hidden="true"></i>
